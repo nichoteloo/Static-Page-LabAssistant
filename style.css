@@ -95,7 +95,8 @@ footer {
     color: #fdfdfd;
     padding: 10px;
     text-align: center;
-    font-weight: bold;
+    font-size: small;
+    font-family: "Roboto Condensed", sans-serif;
   }
   
   /* Additional Styles */
@@ -133,6 +134,12 @@ footer {
 
     header .hero-container {
         position: relative;
+    }
+
+    header .hero-container .left {
+      flex: 1;
+      margin-left: 30px;
+      margin-top: 10px;
     }
 
     /* Sections */
@@ -182,6 +189,7 @@ footer {
       color: #fdfdfd;
       padding: 10px;
       text-align: center;
-      font-weight: bold;
+      font-size: small;
+      font-family: "Roboto Condensed", sans-serif;
     }
   }
