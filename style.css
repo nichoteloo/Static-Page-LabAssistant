@@ -8,10 +8,10 @@
   }
   
   .wrapper {
-    width: 750px;
+    width: 700px;
     margin: 0 auto;
     font-family: "Roboto Condensed", sans-serif;
-    box-shadow: 1px 18px 18px -5px rgba(0, 0, 0, 0.3);
+    box-shadow: 15px 18px 18px -5px rgba(0, 0, 0, 0.3);
   }
   
   p {
@@ -184,12 +184,21 @@ footer {
         width: 80px;
     }
 
+    section .section-content .format ul {
+      margin-left: -20px;
+    }
+
+    section .section-content .catatan ul {
+      margin-left: -20px;
+    }
+
+
     footer {
       background: #07050d;
       color: #fdfdfd;
       padding: 10px;
       text-align: center;
-      font-size: small;
+      font-size: x-small;
       font-family: "Roboto Condensed", sans-serif;
     }
   }
