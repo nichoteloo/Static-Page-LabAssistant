@@ -24,41 +24,10 @@
   /* Header - Navigation */
   
   header {
-    height: 30vh;
-    background: #07050d;
+    height: 25vh;
+    background: #000000;
     overflow: hidden;
   }
-  
-  /* header nav {
-    background: #fdfdfd;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 24px;
-  
-    position: fixed;
-    top: 0;
-    width: 1024px;
-    z-index: 200;
-    box-shadow: 0 2px 10px -3px rgba(0, 0, 0, 0.2);
-  }
-  
-  header nav ul {
-    display: flex;
-    list-style: none;
-  }
-  
-  header nav ul li {
-    margin: 0 24px;
-  }
-  
-  header nav a {
-    text-decoration: none;
-    color: #07050d;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 18px;
-  } */
   
   /* Header - Hero */
   
@@ -85,40 +54,6 @@
     font-size: 32px;
     color: #fdfdfd; 
   }
-  
-  /* header .hero-container .left h2:nth-of-type(2) {
-    margin-left: 20px;
-  }
-  
-  .btn {
-    background: #ff4d4d;
-    text-decoration: none;
-    color: #07050d;
-    margin: 16px 0;
-    display: inline-block;
-    padding: 12px 32px;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
-  
-  .btn.light {
-    color: #fdfdfd;
-  }
-  
-  .hero-container .left .btn {
-    margin-left: 20px;
-  }
-  
-  .hero-container .left .social-icons img {
-    margin: 16px 20px;
-    height: 40px;
-  }
-  
-  .hero-container .right img {
-    height: 580px;
-  }
-*/
   
   /* Section */
   
@@ -152,13 +87,6 @@
   section .section-content p:first-of-type {
     margin: 0;
   }
-  
-  /* Work Section */
-  
-  /* section .work-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  } */
 
   /* Footer */
 
@@ -172,13 +100,32 @@ footer {
   
   /* Additional Styles */
 
-
   @media (max-width: 600px) {
+    .body {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
     .wrapper {
         width: auto;
         margin: 0 auto;
         font-family: "Roboto Condensed", sans-serif;
       }
+    
+    p {
+        font-size: 16px;
+        color: #07050d;
+        line-height: 3;
+        margin: 0 auto;
+    }
+
+    .link p {
+      line-height: 1;
+    }
+
+    .pastikan p {
+      line-height: 1;
+    }
 
     header .hero-container {
         position: relative;
@@ -215,5 +162,13 @@ footer {
     section h2::after {
         height: 4px;
         width: 80px;
+    }
+
+    footer {
+      background: #07050d;
+      color: #fdfdfd;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
     }
   }
